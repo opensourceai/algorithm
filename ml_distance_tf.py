@@ -2,7 +2,7 @@
 # File Name：ml_distance
 # Author : Chen Quan
 # Date：2019/2/18
-# Description :
+# Description : Use Tensor Flow to implement a distance learning formula for machine learning.
 __author__ = 'Chen Quan'
 import tensorflow as tf
 

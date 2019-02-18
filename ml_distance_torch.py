@@ -2,10 +2,9 @@
 # File Name：ml_distance
 # Author : Chen Quan
 # Date：2019/2/18
-# Description :
+# Description : Use Torch to implement a distance learning formula for machine learning.
 __author__ = 'Chen Quan'
 import torch
-import torch.nn.functional as F
 
 
 # 欧式距离
