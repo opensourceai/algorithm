@@ -17,6 +17,8 @@ def euclidean_distance(a, b):
     :param b:
     :return:
     """
+    a, b = tf.cast((a, b), dtype=tf.float32)
+
     return tf.sqrt(tf.reduce_sum(tf.square(a - b, name='square')), name='euclidean_distance')
 
 
@@ -28,7 +30,9 @@ def standard_euclidean_distance(a, b):
     :param b:
     :return:
     """
-    avg = (a + b) / 2
+    a, b = tf.cast((a, b), dtype=tf.float32)
+
+    avg = (a + b) / tf.constant(2.0, tf.float32)
     s = tf.square((a - avg)) + tf.square((b - avg))
     d = tf.reduce_sum(tf.square(a - b) / s)
     return d
@@ -63,4 +67,10 @@ def hamming_distance(a, b):
 
 # 杰卡德系数
 def Jaccard_similarity_coefficient(a, b):
+    """
+    暂无法实现
+    :param a:
+    :param b:
+    :return:
+    """
     pass
