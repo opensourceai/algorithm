@@ -166,7 +166,7 @@ def main():
     # train
 
     ada = AdaBoost(x_train, y_train)
-    ada.train(10)
+    ada.train(50)
 
     # predict
     y_pred = ada.pred(x_test)
