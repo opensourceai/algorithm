@@ -11,6 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 
+# 单层决策树
 class DecisionStump:
 
     def __init__(self, X, y):
